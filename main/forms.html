@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="headimg">
+        <h1>A magyar Informatika napja</h1>
+        <h4>Töltse ki a kérdőívet a jelentkezéshez!</h4>
+    </div>
+    
+    <main>
+    <form action="" name="be">
+        <h2>Magyar Informatika Napja konferenciára jelentkezési lap</h2>
+        <label for="nev">Add meg a teljes neved:</label>
+        <input type="text" name="nev" required><br>
+        <label for="szuldat">Hány éves vagy:</label>
+        <input type="number" name="szuldat" id="eletkor" size="3" required><br>
+        <label for="email">E-mail cím:</label>
+        <input type="email" name="email" id="">
+        <br>
+        <h2>Jegyvásárlás</h2>
+        <label for="nyugdij">Nyugdíjas jegy(50%):</label>
+        <input type="number" name="nyugdij" id="idos" min="0" placeholder="1"><br>
+        <label for="felnott">Felnőtt jegy:</label>
+        <input type="number" name="felnott" id="normal" min="0" placeholder="2"><br>
+
+        <button type="button" onclick="szamits()">Ajánlatot Kérek!</button>
+        <hr>
+        <h3 id="osszeg"></h3>
+    </form>
+    </main>
+    <div id="fizetes"></div>
+    <div id="megveve"></div>
+    <footer>
+        <p>&copy; Sziksz Roland & Simó Bertalan 2025. Minden Jog Fenntartva</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
